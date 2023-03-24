@@ -20,4 +20,10 @@
         <item name="itemTextColor">@color/green_light_2</item>
     </style>
 
+    <style name="BottomNavigationTop">
+        <item name="android:background">@color/blue_dark</item>
+        <item name="itemIconTint">@color/blue_light</item>
+        <item name="itemTextColor">@color/blue_light_2</item>
+    </style>
+
 </resources>

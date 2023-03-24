@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     FirstFragment firstFragment = new FirstFragment();
     SecondFragment secondFragment = new SecondFragment();
     ThirdFragment thirdFragment = new ThirdFragment();
+    InicioFragment inicioFragment = new InicioFragment();
+    OtroFragment otroFragment = new OtroFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = findViewById(R.id.bottom_navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         loadFragment(firstFragment);
+
+        BottomNavigationView navigationTop = findViewById(R.id.bottom_navigation_top);
+        navigationTop.setOnNavigationItemSelectedListener(mTopOnNavigationItemSelectedListener);
+        loadFragment(inicioFragment);
+
     }
 
     private final BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -39,6 +46,21 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.thirdFragment:
                     loadFragment(thirdFragment);
+                    return true;
+            }
+            return false;
+        }
+    };
+
+    private final BottomNavigationView.OnNavigationItemSelectedListener mTopOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            switch (item.getItemId()){
+                case R.id.inicioFragment:
+                    loadFragment(inicioFragment);
+                    return true;
+                case R.id.otroFragment:
+                    loadFragment(otroFragment);
                     return true;
             }
             return false;

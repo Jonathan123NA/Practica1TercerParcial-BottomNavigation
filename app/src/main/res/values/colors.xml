@@ -13,4 +13,9 @@
     <color name="green_light">#3a9188</color>
     <color name="green_light_2">#b8e1dd</color>
 
+    <color name="blue_dark">#002846</color>
+    <color name="blue_normal">#008FFF</color>
+    <color name="blue_light">#71C0FF</color>
+    <color name="blue_light_2">#CFE9FF</color>
+
 </resources>
