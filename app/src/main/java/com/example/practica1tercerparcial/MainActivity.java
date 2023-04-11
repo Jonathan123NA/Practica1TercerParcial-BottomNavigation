@@ -17,7 +17,11 @@ public class MainActivity extends AppCompatActivity {
     SecondFragment secondFragment = new SecondFragment();
     ThirdFragment thirdFragment = new ThirdFragment();
     InicioFragment inicioFragment = new InicioFragment();
-    OtroFragment otroFragment = new OtroFragment();
+    WatchFragment watchFragment = new WatchFragment();
+    MarketplaceFragment marketplaceFragment = new MarketplaceFragment();
+    PerfilFragment perfilFragment = new PerfilFragment();
+    NotificacionFragment notificacionFragment = new NotificacionFragment();
+    MenuFragment menuFragment = new MenuFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,8 +63,20 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.inicioFragment:
                     loadFragment(inicioFragment);
                     return true;
-                case R.id.otroFragment:
-                    loadFragment(otroFragment);
+                case R.id.watchFragment:
+                    loadFragment(watchFragment);
+                    return true;
+                case R.id.marketplaceFragment:
+                    loadFragment(marketplaceFragment);
+                    return true;
+                /*case R.id.perfilFragment:
+                    loadFragment(perfilFragment);
+                    return true;*/
+                case R.id.notificacionFragment:
+                    loadFragment(notificacionFragment);
+                    return true;
+                case R.id.menuFragment:
+                    loadFragment(menuFragment);
                     return true;
             }
             return false;

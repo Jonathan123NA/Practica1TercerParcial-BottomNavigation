@@ -6,7 +6,21 @@
         android:title="Inicio"/>
 
     <item
-        android:id="@+id/otroFragment"
-        android:icon="@drawable/ic_otro"
-        android:title="Otro"/>
+        android:id="@+id/watchFragment"
+        android:icon="@drawable/ic_watch"
+        android:title="Watch"/>
+    <item
+        android:id="@+id/marketplaceFragment"
+        android:icon="@drawable/ic_marketplace"
+        android:title="Marketplace"/>
+
+    <item
+        android:id="@+id/notificacionFragment"
+        android:icon="@drawable/ic_notificacion"
+        android:title="Notificacion"/>
+
+    <item
+        android:id="@+id/menuFragment"
+        android:icon="@drawable/ic_menu"
+        android:title="Menu"/>
 </menu>
